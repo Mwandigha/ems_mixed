@@ -111,7 +111,7 @@ data.chickens%>%
 
 # Exploratory Data Analysis
 
-To explore the data, indivuidual profile plots (informally known as sphagehtti plots) may be generated using the code below
+To explore the data, individual profile plots (informally known as spaghetti plots) may be generated using the code below
 
 ```{r eval = FALSE, echo = FALSE}
 
@@ -165,7 +165,7 @@ plot.grids <- gridExtra::grid.arrange(subject.trend,
 
 ```
 
-![Image text](plots/diet_trends.png) *Chick specific and population average weight trend.*
+![diet_trends](https://user-images.githubusercontent.com/123829565/219453129-3f3dd83e-cdca-41d8-a969-4e1f2d1f50ed.png) *Chick specific and population average weight trend.*
 
 ## Method 1: Disregard subject (Chick) effect
 
