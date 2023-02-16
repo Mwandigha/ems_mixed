@@ -165,7 +165,7 @@ plot.grids <- gridExtra::grid.arrange(subject.trend,
 
 ![diet_trends](https://user-images.githubusercontent.com/123829565/219453129-3f3dd83e-cdca-41d8-a969-4e1f2d1f50ed.png) *Chick specific and population average weight trend.*
 
-## Method 1: Disregard subject (Chick) effect
+## Method 1: Disregard subject (chick) effect
 
 As the weight measurements belonging to an individual chick are correlated, it is prudent that this aspect of the data is captured in the modelling. Failure to do this, will inadvertently inflate the type I error (false positive) rate ($\alpha$). By fitting a linear regression model, the correlation structure is disregarded.
 
