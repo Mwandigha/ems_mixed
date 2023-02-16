@@ -31,7 +31,6 @@ pacman::p_load("tidyverse"
                "fishmethods"
                "lme4"
                "lmerTest"
-               "geepack"
                "stats")
 
 
@@ -47,7 +46,6 @@ lib.load.list <- c("tidyverse"
                     "fishmethods"
                     "lme4"
                     "lmerTest"
-                    "geepack"
                     "stats")
 
 
@@ -458,7 +456,7 @@ anova(ri, corr.ri.s)
 
 ```
 
-The pvalue suggests that there is sufficient evidence to reject the null hypotheses (no need for a random slope). Note that the random intercept model has seven parameters (6 fixed including residual variance and 1 random). The random intercept and slope model has an extra two due to the addition of a random slope and covariance parameter between the two random effects. As such, caution should be exercised specified adding random effects as the total number of parameters to be estimated may increase substantially to include all pairwise covariances between the random effects specified.
+The pvalue suggests that there is sufficient evidence to reject the null hypotheses (no need for a random slope). Note that the random intercept model has seven parameters (6 fixed including residual variance and 1 random effect). The random intercept and slope model has an extra two due to the addition of a random slope and covariance parameter between the two random effects. As such, caution should be exercised specified adding random effects as the total number of parameters to be estimated may increase substantially to include all pairwise covariances between the random effects specified.
 
 ```{r eval = FALSE, echo = FALSE}
 
@@ -478,7 +476,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 # Final model
 
-The resulting model determined to be useful is the one that includes a random intercept and slope. The model may be refined further by determining whether the covariance may be dropped from the model. This would be evaluated by the LRT as previously demonstrated. However, this will not be covered here. Finally, population average level (fixed effects) and chick specific predictions from the model as follows.
+The resulting model determined to be useful is the one that includes a random intercept and slope. The model may be refined further by determining whether the covariance may be dropped from the model. This would be evaluated by the LRT as previously demonstrated. However, this will not be covered here. Finally, population average level (fixed effects) and chick specific predictions from the model can be obtained as follows.
 
 ```{r eval = FALSE, echo = FALSE}
 
