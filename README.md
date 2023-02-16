@@ -256,7 +256,7 @@ Adjusted r-square 0.1017534 0.0009160843 0.04551967 0.1634451
 ANOVA rho         0.1034762 0.0009441512 0.04633481 0.1660160                                                            
 ```
 
-## Method 2: Disregard subject (chick) effect
+## Method 2: Analyse (chick) cluster level summaries
 
 As disregarding the correlation would be inappropriate, a simpler but accurate treatment of this problem may be dealt with using cluster (here chick) level summaries.
 
